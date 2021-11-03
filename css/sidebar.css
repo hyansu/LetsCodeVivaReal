@@ -1,0 +1,245 @@
+.searchProperty{
+    width: 254px;
+    background: var(--yellow-400);
+    border: solid 1px var(--yellow-500);
+    border-radius: 4px;
+    padding: 16px;
+    margin-bottom: 24px;
+}
+
+.searchProperty label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 8px;
+}
+
+.searchProperty input[type=text]{
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+}
+
+.seachTagContainer{
+    display: flex;
+    justify-content: flex-start;
+    margin: 16px 0px 14px 0px;
+}
+
+.seachTag {
+    padding: 6px 32px 6px 0px;
+    cursor: pointer;
+}
+
+.seachTag span{
+    display: block;
+    font-weight: 400;
+    font-size: 13px;
+    color: rgba(0,0,0,.54);
+}
+
+.seachTag span::after{
+    content: "×";
+    position: absolute;
+    padding:0px 5px;
+    font-size: 14px;
+    margin-left: 6px;
+}
+
+.seachTag span:hover::after{
+    border-radius: 50%;
+    background: rgba(0,0,0,.54);
+    color: var(--yellow-400);
+}
+
+.propertyWith{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.propertyWith label{
+    margin-bottom: 0px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    height: 32px;
+  }
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--yellow-200);
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 28px;
+    width: 28px;
+    left: 2px;
+    bottom: 2px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+    border-radius: 50%;    
+  }
+ 
+  input[type=checkbox]:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input[type=checkbox]:checked + .slider:before {
+    transform: translateX(20px);
+  }
+
+  .propertyWith p{
+      display: block;
+      margin-left: 8px;
+      font-size: 13px;
+  }
+
+  .propertyType{
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: rgba(0,0,0,.54);
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 13px;
+    max-width: 100%;
+    padding: 12px;
+    height: 44px;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+  }
+
+  .propertyType{
+      position: relative;
+      margin-bottom: 26px;
+  }
+
+  .propertyType div::before{
+    background: url("../img/arrow.svg") no-repeat 50%;
+    background-size: 23px;
+    content: "";
+    height: 100%;
+    width: 23px;
+    position: absolute;
+    right: 8px;
+    top: 0;
+    transform: rotate(180deg);
+    transition: transform 0.1s linear;
+  }   
+  
+
+  .price{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+  }
+
+  .price div:first-child{
+      margin-right: 16px;
+  }
+
+  .price div:first-child::after{
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 16px;
+      margin-top: 22px;
+      background: rgba(0,0,0,.12)
+  }
+
+  .numberBadrooms{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 18px;
+  }
+
+  .numberBadrooms li button{
+    display: block ;
+    height: 32px;
+    padding: 0 12px;
+    background: white;
+    border: none;
+    border-radius: 32px;
+    color: rgba(0,0,0,.54);
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
+    cursor: pointer;
+  }
+
+  .numberBadrooms li button:hover{
+    background: var(--gray-100);
+}
+
+  .numberBadrooms li button:focus{
+      background:var(--blue-500);
+      color: white;
+  }
+
+
+/* #################### propertyMoreInformation  */
+
+.propertyMoreInformation{
+    width: 254px;
+    height: 500px;
+    background: white;
+    border: solid 1px var(--gray-100);
+    border-radius: 4px;
+    padding: 16px;
+}
+
+.propertyMoreInformation label{
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 13px;
+    color: rgba(0,0,0,.54);
+    margin-bottom: 8px;
+}
+
+.area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.area input[type=text]{
+    border: 1px solid rgba(0,0,0,.12);
+}
+
+.area div:first-child{
+    margin-right: 16px;
+}
+
+.area div:first-child::after{
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 16px;
+    margin-top: 22px;
+    background: rgba(0,0,0,.12)
+}

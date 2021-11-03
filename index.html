@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>VivaReal</title>
+</head>
+<body>
+
+    <header>
+        
+        <nav>
+            <div class="navLeft">
+                <div class="logo"><a href="#"><img src="img/vivareal.svg" alt="Viva Real"></a></div>
+                <ul>
+                    <li><a href="">comprar</a></li>
+                    <li><a href="">alugar</a></li>
+                    <li><a href="">imóveis novos</a></li>
+                    <li><a href="">seleção vivareal</a></li>
+                    <li><a href="">descobrir</a></li>
+                    <li><a href="">financiamento</a></li>
+                </ul>
+            </div>
+
+            <ul>
+                <li><a href="">anunciar imóveis</a></li>
+                <li><a href="">entrar</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    
+    <main>
+
+        <div class="container">
+            <aside>
+                <div class="searchProperty">
+                    <form>
+                        <label for="seachInput">localização do imóvel</label>
+                        <input type="text" name="seachInput" id="seachInput" autocomplete="off" placeholder="Digite uma rua, bairro ou cidade">
+                        <div class="seachTagContainer">
+                            <div class="seachTag">
+                                <span>São Paulo - SP</span>
+                            </div>
+                        </div>
+
+                        <label>imóvel com</label>
+                        <div class="propertyWith">
+                            <label class="switch">
+                                <input type="checkbox" name="virtualTour" id="tourVirtual">
+                                <span class="slider"></span>
+                            </label>
+
+                            <p>Tour Virtual ou Vídeos</p>
+
+                        </div>
+
+                        <label for="propertyType">tipo de imóvel</label>
+                        <div class="propertyType">
+                            <div>
+                                Mostrar todos
+                            </div>                            
+                        </div>
+
+                        <div class="price">
+                            <div>
+                                <label for="minimumPrice">preço mínimo</label>
+                                <input type="text" name="minimumPrice" id="minimumPrice" autocomplete="off">
+                            </div>
+
+                            <div>
+                                <label for="maximumPrice">preço máximo</label>
+                                <input type="text" name="maximumPrice" id="maximumPrice" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <label>numero de quartos</label>
+                        <ul class="numberBadrooms">
+                            <li><button type="button">1+</button></li>
+                            <li><button type="button">2+</button></li>
+                            <li><button type="button">3+</button></li>
+                            <li><button type="button">4+</button></li>
+                            <li><button type="button">5+</button></li>
+                        </ul>
+
+                    </form>
+                </div>
+                <div class="propertyMoreInformation">
+
+                    <div class="area">
+                        <div>
+                            <label for="minimumArea">área mínimo</label>
+                            <input type="text" name="minimumArea" id="minimumArea" autocomplete="off">
+                        </div>
+
+                        <div>
+                            <label for="maximumArea">área máximo</label>
+                            <input type="text" name="maximumArea" id="maximumArea" autocomplete="off">
+                        </div>
+                    </div>
+
+                </div>
+            </aside>
+    
+            <section>
+
+                <nav>
+                    <ul>
+                        <li><button type="button" class="buttonSelected">comprar</button> </a></li>
+                        <li><button type="button">alugar</button></li>
+                        <li><button type="button">imóveis novos</button></li>
+                        <li><button type="button">seleção vivareal</button></li>
+                    </ul>
+                </nav>
+    
+                <div class='resultInfo'>
+
+                    <h1><span>1.663.157</span> Imóveis a venda em <span>São Paulo - SP</span></h1>
+                    <div class="resultTagContainer">
+                        <div class="resultTag">
+                            <span>São Paulo - SP</span>
+                        </div>
+                    </div>
+
+                </div>
+    
+                <div class="cardsContainer">
+                    <article>
+                        <div>
+                            <img src="" alt="">
+                        </div>                    
+                        <div>
+                            <h3></h3>
+                            <h2></h2>
+                            <div>
+                                <span></span>
+                            </div>
+                            <div>
+                                <span></span>
+                            </div>
+                            <div>
+                                <p>R$ 280.000</p>
+                                <p>condomínio <span>R$250,00</span></p>
+                            </div>
+                        </div>
+                    </article>
+                </div>     
+    
+            </section>
+        </div>
+
+    </main>
+
+    <script src="js/main.js"></script>
+
+</body>
+</html>

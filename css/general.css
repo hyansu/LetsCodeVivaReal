@@ -1,0 +1,33 @@
+:root {
+    --gray-100: #ebebeb;
+    --blue-500: #1190cd;
+    --blue-400: #249ad1;
+    --blue-100: #ecf6fb;
+    --yellow-200: #e5cf8c;
+    --yellow-400: #fdd685;
+    --yellow-500: #fdb10f;
+}
+
+body {
+    font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+input[type=text] {
+    background: #fff;
+    border: 2px solid transparent;
+    border-radius: 4px;
+    color: rgba(0,0,0,.54);
+    outline: none;
+    box-sizing: border-box;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    font-size: 13px;
+    max-width: 100%;
+    padding: 12px;
+    height: 44px;
+    width: 100%;
+}
+
+input[type=text]:focus {
+    border: 2px solid var(--blue-500);
+    box-sizing: border-box;
+}
